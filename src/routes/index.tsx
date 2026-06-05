@@ -1,12 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Phone, Mail, MapPin, ShieldCheck, Handshake, Scale, Building2, Home, KeyRound,
-  ClipboardList, Megaphone, Leaf, TrendingUp, MoveRight, Quote, CheckCircle2,
+  ClipboardList, Megaphone, Leaf, TrendingUp, MoveRight, CheckCircle2,
 } from "lucide-react";
-import portrait from "@/assets/mphumzeni-portrait.jpg";
-import saHome from "@/assets/sa-home.jpg";
-import handover from "@/assets/handover.jpg";
-import paperwork from "@/assets/paperwork.jpg";
 import logo from "@/assets/sbu-logo.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -82,146 +78,162 @@ function Index() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 pb-20 pt-14 md:grid-cols-12 md:gap-16 md:px-8 md:pt-20">
-          <div className="md:col-span-7 md:pt-6">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-primary">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold" /> Master Practitioner in Real Estate
-            </div>
-            <h1 className="mt-6 font-display text-[2.5rem] leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Professional Real Estate Solutions Built on{" "}
-              <span className="italic text-primary">Trust</span> and{" "}
-              <span className="italic text-gold">Transparency</span>.
-            </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Helping buyers, sellers, landlords, tenants and investors make confident property
-              decisions throughout South Africa.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground shadow-sm transition hover:bg-primary/90">
-                Book a Consultation <MoveRight className="h-4 w-4" />
-              </a>
-              <a href="tel:+27837764989" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-medium text-foreground transition hover:border-primary">
-                <Phone className="h-4 w-4 text-gold" /> Call 083 776 4989
-              </a>
-            </div>
-            <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-border pt-8">
-              <div>
-                <dt className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Credential</dt>
-                <dd className="mt-1 font-display text-lg text-foreground">MPRE</dd>
-              </div>
-              <div>
-                <dt className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Based in</dt>
-                <dd className="mt-1 font-display text-lg text-foreground">Soweto, GP</dd>
-              </div>
-              <div>
-                <dt className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Serving</dt>
-                <dd className="mt-1 font-display text-lg text-foreground">Nationwide</dd>
-              </div>
-            </dl>
+      {/* HERO — editorial, type-led, no people */}
+      <section className="relative overflow-hidden border-b border-border">
+        <div className="grain absolute inset-0 opacity-60" aria-hidden />
+        <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-12 sm:px-6 md:px-10 md:pb-24 md:pt-20">
+          <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
+            <span className="inline-block h-px w-8 bg-gold" />
+            Est. South Africa · Master Practitioner in Real Estate
           </div>
 
-          <div className="relative md:col-span-5">
-            <div className="relative mx-auto max-w-md">
-              <div className="absolute -inset-3 rounded-[1.75rem] bg-gradient-to-br from-primary/15 via-transparent to-gold/20" aria-hidden />
-              <img
-                src={portrait}
-                alt="Mphumzeni Nyembe, Master Practitioner in Real Estate"
-                width={896}
-                height={1152}
-                className="relative aspect-[4/5] w-full rounded-3xl object-cover shadow-xl ring-1 ring-border"
-              />
-              <div className="absolute -bottom-6 left-6 right-6 rounded-2xl border border-border bg-card/95 p-4 shadow-lg backdrop-blur">
-                <div className="flex items-center gap-3">
-                  <img src={logo.url} alt="" width={40} height={40} className="h-10 w-10 rounded-full" />
-                  <div>
-                    <div className="font-display text-sm text-foreground">Mphumzeni Nyembe</div>
-                    <div className="text-xs text-muted-foreground">Master Practitioner in Real Estate</div>
-                  </div>
-                </div>
-              </div>
+          <h1 className="mt-8 max-w-5xl font-display text-[clamp(2.5rem,8vw,6.5rem)] leading-[0.95] tracking-[-0.035em] text-balance text-ink">
+            Property,
+            <span className="italic text-primary"> handled </span>
+            <br className="hidden sm:block" />
+            with the care
+            <br className="hidden sm:block" />
+            of a craftsman.
+          </h1>
+
+          <div className="mt-10 grid gap-8 md:grid-cols-12 md:gap-12">
+            <p className="md:col-span-6 md:col-start-1 max-w-xl text-[15px] leading-relaxed text-foreground/75 md:text-[17px]">
+              The SBU Real Estate is the practice of Mphumzeni Nyembe — guiding buyers, sellers,
+              landlords, tenants and investors through the South African property market with
+              transparency, patience and professional rigour.
+            </p>
+            <div className="md:col-span-5 md:col-start-8 flex flex-col gap-3 sm:flex-row sm:items-center md:flex-col md:items-stretch">
+              <a href="#contact" className="inline-flex items-center justify-between gap-3 rounded-none bg-foreground px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-background transition hover:bg-primary">
+                Book a Consultation <MoveRight className="h-4 w-4" />
+              </a>
+              <a href="tel:+27837764989" className="inline-flex items-center justify-between gap-3 rounded-none border border-border bg-card px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-foreground transition hover:border-foreground">
+                <span className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> 083 776 4989</span>
+                <span className="text-gold">→</span>
+              </a>
             </div>
           </div>
+
+          <dl className="mt-16 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-border pt-10 md:grid-cols-4">
+            {[
+              { k: "Credential", v: "MPRE" },
+              { k: "Based in", v: "Soweto, GP" },
+              { k: "Serving", v: "Nationwide" },
+              { k: "Regulator", v: "PPRA" },
+            ].map((s) => (
+              <div key={s.k}>
+                <dt className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{s.k}</dt>
+                <dd className="mt-2 font-display text-2xl text-ink md:text-3xl">{s.v}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section id="about" className="border-t border-border bg-cream">
-        <div className="mx-auto grid max-w-7xl gap-14 px-5 py-20 md:grid-cols-12 md:gap-16 md:px-8 md:py-28">
+      {/* MARQUEE / SLOGAN BAND */}
+      <section aria-hidden className="overflow-hidden border-b border-border bg-ink text-paper">
+        <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 py-6 sm:px-6 md:px-10">
+          <span className="font-display text-xl italic md:text-2xl">Trust</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50">·</span>
+          <span className="font-display text-xl italic md:text-2xl">Transparency</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50">·</span>
+          <span className="font-display text-xl italic md:text-2xl">Service</span>
+        </div>
+      </section>
+
+      {/* ABOUT — no portrait, logo-led monogram instead */}
+      <section id="about" className="border-b border-border bg-bone">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-12 md:gap-16 md:px-10 md:py-28">
           <div className="md:col-span-5">
-            <img src={saHome} alt="A South African suburban family home" width={1536} height={1024} loading="lazy" className="aspect-[4/5] w-full rounded-3xl object-cover shadow-lg" />
+            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 01 — About</div>
+            <h2 className="mt-4 font-display text-4xl leading-[1.05] text-ink md:text-6xl">
+              Meet <span className="italic">Mphumzeni</span> Nyembe.
+            </h2>
+            <div className="mt-10 hidden md:block">
+              <figure className="relative aspect-square w-full max-w-sm bg-card p-10 ring-1 ring-border">
+                <img src={logo.url} alt="The SBU Real Estate emblem" className="h-full w-full object-contain" />
+                <figcaption className="absolute -bottom-4 left-6 right-6 bg-ink px-4 py-2 text-center font-mono text-[10px] uppercase tracking-[0.22em] text-paper">
+                  The SBU Real Estate · Est. ZA
+                </figcaption>
+              </figure>
+            </div>
           </div>
           <div className="md:col-span-7">
-            <p className="text-xs uppercase tracking-[0.22em] text-primary">About</p>
-            <h2 className="mt-3 font-display text-4xl text-foreground md:text-5xl">Meet Mphumzeni Nyembe</h2>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="font-display text-2xl leading-snug text-ink md:text-3xl text-pretty">
               A Master Practitioner in Real Estate dedicated to helping clients navigate property
-              transactions with confidence, professionalism and integrity. Mphumzeni brings deep
-              local market knowledge and a client-first ethic to every mandate.
+              transactions with confidence, professionalism and integrity.
             </p>
-            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+            <p className="mt-6 text-[15px] leading-relaxed text-foreground/75 md:text-base">
+              Mphumzeni brings deep local market knowledge and a client-first ethic to every mandate
+              — whether you are buying your first home in Soweto, renting out a unit in Gauteng,
+              or assembling a small portfolio across the country.
+            </p>
+            <ul className="mt-10 grid gap-3 sm:grid-cols-2">
               {[
                 "Industry expertise and current market insight",
                 "Personal service from first call to final transfer",
-                "Transparent processes with no hidden surprises",
+                "Transparent processes — no hidden surprises",
                 "Strong understanding of the South African market",
               ].map((t) => (
-                <li key={t} className="flex items-start gap-3 text-sm text-foreground/80">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-primary" /> {t}
+                <li key={t} className="flex items-start gap-3 border-t border-border pt-4 text-sm text-foreground/85">
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-primary" /> {t}
                 </li>
               ))}
             </ul>
-            <blockquote className="mt-10 border-l-2 border-gold pl-5">
-              <p className="font-display text-xl italic text-foreground md:text-2xl">
+            <blockquote className="mt-12 border-l-2 border-gold pl-6">
+              <p className="font-display text-2xl italic leading-snug text-ink md:text-3xl">
                 "Elevating Professionalism, Transparency and Service."
               </p>
-              <footer className="mt-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">— The SBU Real Estate</footer>
+              <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">— The SBU Real Estate</footer>
             </blockquote>
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
-            <div className="max-w-2xl">
-              <p className="text-xs uppercase tracking-[0.22em] text-primary">Services</p>
-              <h2 className="mt-3 font-display text-4xl text-foreground md:text-5xl">A full-service property partner</h2>
+      <section id="services" className="border-b border-border">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-28">
+          <div className="grid gap-8 md:grid-cols-12 md:gap-12">
+            <div className="md:col-span-5">
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 02 — Services</div>
+              <h2 className="mt-4 font-display text-4xl leading-[1.05] text-ink md:text-5xl">
+                A full-service property practice.
+              </h2>
             </div>
-            <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-              Every service is delivered with the same standard of care — whether you are buying
-              your first home, renting out a unit, or building a portfolio.
+            <p className="md:col-span-6 md:col-start-7 md:pt-12 text-[15px] leading-relaxed text-foreground/75 md:text-base">
+              Each service is delivered with the same standard of care — whether you are buying
+              your first home, leasing out a unit, or building a portfolio.
             </p>
           </div>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-3xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
-            {services.map(({ icon: Icon, title, text }) => (
-              <div key={title} className="group bg-card p-7 transition hover:bg-cream">
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-primary-foreground">
-                  <Icon className="h-5 w-5" />
+          <div className="mt-14 grid divide-y divide-border border-y border-border sm:grid-cols-2 sm:divide-x lg:grid-cols-4">
+            {services.map(({ icon: Icon, title, text }, i) => (
+              <article key={title} className="group relative p-7 transition hover:bg-bone sm:p-8">
+                <div className="flex items-center justify-between">
+                  <Icon className="h-6 w-6 text-primary" strokeWidth={1.5} />
+                  <span className="font-mono text-[10px] text-muted-foreground">0{i + 1}</span>
                 </div>
-                <h3 className="mt-5 font-display text-lg text-foreground">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{text}</p>
-              </div>
+                <h3 className="mt-8 font-display text-xl text-ink">{title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/70">{text}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
       {/* ADDITIONAL */}
-      <section className="border-t border-border bg-cream">
-        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-24">
+      <section className="border-b border-border bg-bone">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-24">
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-primary">Additional solutions</p>
-            <h2 className="mt-3 font-display text-3xl text-foreground md:text-4xl">Specialist property advice when you need it</h2>
+            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 03 — Specialist solutions</div>
+            <h2 className="mt-4 font-display text-3xl leading-[1.05] text-ink md:text-4xl">
+              Advisory for the moments that matter.
+            </h2>
           </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
             {extras.map(({ icon: Icon, title, text }) => (
-              <div key={title} className="rounded-2xl border border-border bg-card p-6">
-                <Icon className="h-6 w-6 text-gold" />
-                <h3 className="mt-4 font-display text-lg text-foreground">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{text}</p>
+              <div key={title} className="bg-bone p-6 sm:p-7">
+                <Icon className="h-5 w-5 text-gold" strokeWidth={1.5} />
+                <h3 className="mt-6 font-display text-lg text-ink">{title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-foreground/70">{text}</p>
               </div>
             ))}
           </div>
@@ -229,20 +241,25 @@ function Index() {
       </section>
 
       {/* WHY US */}
-      <section id="why" className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
+      <section id="why" className="border-b border-border bg-ink text-paper">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-28">
           <div className="grid gap-12 md:grid-cols-12">
-            <div className="md:col-span-4">
-              <p className="text-xs uppercase tracking-[0.22em] text-primary">Why us</p>
-              <h2 className="mt-3 font-display text-4xl text-foreground md:text-5xl">Why choose The SBU Real Estate</h2>
-              <img src={handover} alt="Handing over keys to happy new homeowners" width={1280} height={1024} loading="lazy" className="mt-8 hidden aspect-[4/3] w-full rounded-2xl object-cover md:block" />
+            <div className="md:col-span-5">
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-gold">§ 04 — Why Us</div>
+              <h2 className="mt-4 font-display text-4xl leading-[1.05] text-paper md:text-6xl">
+                Built on relationships, not transactions.
+              </h2>
+              <p className="mt-6 max-w-md text-[15px] leading-relaxed text-paper/70">
+                Property is the largest decision most South Africans will make. It deserves a partner
+                who picks up the phone, explains the paperwork, and stays for the long road.
+              </p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 md:col-span-8">
+            <div className="grid gap-px bg-paper/15 sm:grid-cols-2 md:col-span-7">
               {whyUs.map((w, i) => (
-                <div key={w.title} className="rounded-2xl border border-border bg-card p-7">
-                  <div className="font-display text-sm text-gold">0{i + 1}</div>
-                  <h3 className="mt-2 font-display text-xl text-foreground">{w.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{w.text}</p>
+                <div key={w.title} className="bg-ink p-7 sm:p-8">
+                  <div className="font-mono text-[10px] text-gold">0{i + 1} / 04</div>
+                  <h3 className="mt-6 font-display text-2xl text-paper">{w.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-paper/65">{w.text}</p>
                 </div>
               ))}
             </div>
@@ -251,112 +268,92 @@ function Index() {
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="border-t border-border bg-cream">
-        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-          <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-primary">Client process</p>
-            <h2 className="mt-3 font-display text-4xl text-foreground md:text-5xl">A clear path from first call to keys in hand</h2>
+      <section id="process" className="border-b border-border">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-28">
+          <div className="grid gap-8 md:grid-cols-12 md:gap-12">
+            <div className="md:col-span-5">
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 05 — Client Process</div>
+              <h2 className="mt-4 font-display text-4xl leading-[1.05] text-ink md:text-5xl">
+                From first call to keys in hand.
+              </h2>
+            </div>
+            <p className="md:col-span-6 md:col-start-7 md:pt-12 text-[15px] leading-relaxed text-foreground/75">
+              A clear, methodical path. Every step documented, every decision yours.
+            </p>
           </div>
-          <ol className="mt-12 grid gap-5 md:grid-cols-5">
+          <ol className="mt-14 grid gap-px bg-border md:grid-cols-5">
             {steps.map((s) => (
-              <li key={s.n} className="relative rounded-2xl border border-border bg-card p-6">
-                <span className="font-display text-3xl text-primary/30">{s.n}</span>
-                <h3 className="mt-2 font-display text-lg text-foreground">{s.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
+              <li key={s.n} className="relative bg-background p-6 sm:p-7">
+                <span className="font-display text-5xl text-primary/20">{s.n}</span>
+                <h3 className="mt-4 font-display text-lg text-ink">{s.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-foreground/70">{s.text}</p>
               </li>
             ))}
           </ol>
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
-          <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.22em] text-primary">Client voices</p>
-            <h2 className="mt-3 font-display text-4xl text-foreground md:text-5xl">Built on relationships</h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              We are reserving this space for the authentic words of our clients. If we've worked
-              together, we would be honoured to hear from you.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="rounded-2xl border border-dashed border-border bg-card p-7">
-                <Quote className="h-6 w-6 text-gold" />
-                <p className="mt-4 text-sm italic leading-relaxed text-muted-foreground">
-                  Your testimonial will appear here. Share your experience working with The SBU
-                  Real Estate.
-                </p>
-                <div className="mt-6 flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-primary/10" />
-                  <div>
-                    <div className="font-display text-sm text-foreground">Future Client</div>
-                    <div className="text-xs text-muted-foreground">Soweto, Gauteng</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CONTACT */}
-      <section id="contact" className="border-t border-border bg-cream">
-        <div className="mx-auto grid max-w-7xl gap-14 px-5 py-20 md:grid-cols-12 md:gap-16 md:px-8 md:py-28">
+      <section id="contact" className="border-b border-border bg-bone">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-12 md:gap-16 md:px-10 md:py-28">
           <div className="md:col-span-5">
-            <p className="text-xs uppercase tracking-[0.22em] text-primary">Contact</p>
-            <h2 className="mt-3 font-display text-4xl text-foreground md:text-5xl">Let's discuss your property goals</h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              Reach out for a no-obligation consultation. We respond to every enquiry personally.
+            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 06 — Contact</div>
+            <h2 className="mt-4 font-display text-4xl leading-[1.05] text-ink md:text-6xl">
+              Let's discuss your property goals.
+            </h2>
+            <p className="mt-6 max-w-md text-[15px] leading-relaxed text-foreground/75">
+              Reach out for a no-obligation consultation. Every enquiry is answered personally,
+              usually within one business day.
             </p>
-            <div className="mt-8 space-y-5">
-              <div>
-                <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Mphumzeni Nyembe</div>
-                <div className="font-display text-lg text-foreground">Master Practitioner in Real Estate (MPRE)</div>
-              </div>
-              <a href="tel:+27837764989" className="flex items-start gap-3 rounded-xl border border-border bg-card p-4 transition hover:border-primary">
-                <Phone className="mt-1 h-5 w-5 text-gold" />
-                <div>
-                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Phone</div>
-                  <div className="font-display text-base text-foreground">083 776 4989</div>
-                </div>
+            <div className="mt-10 space-y-3">
+              <a href="tel:+27837764989" className="group flex items-center justify-between gap-3 border-t border-border py-5 transition hover:text-primary">
+                <span className="flex items-center gap-4">
+                  <Phone className="h-4 w-4 text-gold" />
+                  <span>
+                    <span className="block font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Phone</span>
+                    <span className="block font-display text-xl text-ink group-hover:text-primary">083 776 4989</span>
+                  </span>
+                </span>
+                <span className="text-gold transition group-hover:translate-x-1">→</span>
               </a>
-              <a href="mailto:mphumzeni@thesbu.co.za" className="flex items-start gap-3 rounded-xl border border-border bg-card p-4 transition hover:border-primary">
-                <Mail className="mt-1 h-5 w-5 text-gold" />
-                <div>
-                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Email</div>
-                  <div className="font-display text-base text-foreground">mphumzeni@thesbu.co.za</div>
-                </div>
+              <a href="mailto:mphumzeni@thesbu.co.za" className="group flex items-center justify-between gap-3 border-t border-border py-5 transition hover:text-primary">
+                <span className="flex items-center gap-4 min-w-0">
+                  <Mail className="h-4 w-4 text-gold shrink-0" />
+                  <span className="min-w-0">
+                    <span className="block font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Email</span>
+                    <span className="block font-display text-xl text-ink group-hover:text-primary truncate">mphumzeni@thesbu.co.za</span>
+                  </span>
+                </span>
+                <span className="text-gold transition group-hover:translate-x-1">→</span>
               </a>
-              <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-4">
-                <MapPin className="mt-1 h-5 w-5 text-gold" />
-                <div>
-                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Office</div>
-                  <div className="font-display text-base text-foreground">859 Nkomo Street</div>
-                  <div className="text-sm text-muted-foreground">Dieploof Extension Phase 3, Soweto 1852</div>
-                </div>
+              <div className="flex items-start justify-between gap-3 border-y border-border py-5">
+                <span className="flex items-start gap-4">
+                  <MapPin className="mt-1 h-4 w-4 text-gold" />
+                  <span>
+                    <span className="block font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Office</span>
+                    <span className="block font-display text-xl text-ink">859 Nkomo Street</span>
+                    <span className="block text-sm text-muted-foreground">Dieploof Ext. Phase 3, Soweto 1852</span>
+                  </span>
+                </span>
               </div>
-              <div className="overflow-hidden rounded-2xl border border-border">
+              <div className="overflow-hidden border border-border bg-card">
                 <iframe
-                  title="Office location"
+                  title="Office location map"
                   src="https://www.google.com/maps?q=859+Nkomo+Street,+Diepkloof,+Soweto&output=embed"
                   loading="lazy"
-                  className="h-64 w-full"
+                  className="h-56 w-full md:h-64"
                 />
               </div>
             </div>
           </div>
           <div className="md:col-span-7">
-            <div className="rounded-3xl border border-border bg-card p-7 shadow-sm md:p-10">
-              <div className="mb-6 flex items-center gap-4">
-                <img src={paperwork} alt="" width={1280} height={1024} loading="lazy" className="hidden h-16 w-16 rounded-xl object-cover md:block" />
-                <div>
-                  <h3 className="font-display text-2xl text-foreground">Send an enquiry</h3>
-                  <p className="text-sm text-muted-foreground">We typically reply within one business day.</p>
-                </div>
+            <div className="border border-border bg-card p-6 sm:p-8 md:p-12">
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-gold">Enquiry Form</div>
+              <h3 className="mt-3 font-display text-3xl text-ink md:text-4xl">Send a message.</h3>
+              <p className="mt-2 text-sm text-muted-foreground">We typically reply within one business day.</p>
+              <div className="mt-8">
+                <ContactForm />
               </div>
-              <ContactForm />
             </div>
           </div>
         </div>
