@@ -144,7 +144,7 @@ function Index() {
       <section id="about" className="border-b border-border bg-bone">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-12 md:gap-16 md:px-10 md:py-28">
           <div className="md:col-span-5">
-            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 01 — About</div>
+            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">About</div>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] text-ink md:text-6xl">
               Meet <span className="italic">Mphumzeni</span> Nyembe.
             </h2>
@@ -194,7 +194,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-28">
           <div className="grid gap-8 md:grid-cols-12 md:gap-12">
             <div className="md:col-span-5">
-              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 02 — Services</div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">Services</div>
               <h2 className="mt-4 font-display text-4xl leading-[1.05] text-ink md:text-5xl">
                 A full-service property practice.
               </h2>
@@ -223,7 +223,7 @@ function Index() {
       <section className="border-b border-border bg-bone">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-24">
           <div className="max-w-2xl">
-            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 03 — Specialist solutions</div>
+            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">Specialist Solutions</div>
             <h2 className="mt-4 font-display text-3xl leading-[1.05] text-ink md:text-4xl">
               Advisory for the moments that matter.
             </h2>
@@ -245,7 +245,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-28">
           <div className="grid gap-12 md:grid-cols-12">
             <div className="md:col-span-5">
-              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-gold">§ 04 — Why Us</div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-gold">Why Us</div>
               <h2 className="mt-4 font-display text-4xl leading-[1.05] text-paper md:text-6xl">
                 Built on relationships, not transactions.
               </h2>
@@ -272,7 +272,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-28">
           <div className="grid gap-8 md:grid-cols-12 md:gap-12">
             <div className="md:col-span-5">
-              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 05 — Client Process</div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">Client Process</div>
               <h2 className="mt-4 font-display text-4xl leading-[1.05] text-ink md:text-5xl">
                 From first call to keys in hand.
               </h2>
@@ -297,7 +297,7 @@ function Index() {
       <section id="contact" className="border-b border-border bg-bone">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-12 md:gap-16 md:px-10 md:py-28">
           <div className="md:col-span-5">
-            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">§ 06 — Contact</div>
+            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-primary">Contact</div>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] text-ink md:text-6xl">
               Let's discuss your property goals.
             </h2>
