@@ -10,9 +10,9 @@ import { ContactForm } from "@/components/ContactForm";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "The SBU Real Estate Â· Mphumzeni Nyembe (MPRE) Â· Soweto, South Africa" },
+      { title: "The SBU Real Estate Ã‚Â· Mphumzeni Nyembe (MPRE) Ã‚Â· Soweto, South Africa" },
       { name: "description", content: "Professional real estate solutions built on trust and transparency. Helping buyers, sellers, landlords, tenants and investors across South Africa." },
-      { property: "og:title", content: "The SBU Real Estate Â· Mphumzeni Nyembe (MPRE)" },
+      { property: "og:title", content: "The SBU Real Estate Ã‚Â· Mphumzeni Nyembe (MPRE)" },
       { property: "og:description", content: "Trusted property partner for buyers, sellers, landlords and investors across South Africa." },
       { property: "og:type", content: "website" },
     ],
@@ -65,11 +65,11 @@ const whyUs = [
 ];
 
 const steps = [
-  { n: "01", title: "Consultation", text: "We listen first â€” your goals, timeline and circumstances." },
+  { n: "01", title: "Consultation", text: "We listen first Ã¢â‚¬â€ your goals, timeline and circumstances." },
   { n: "02", title: "Property Assessment", text: "An honest evaluation of value, condition and market position." },
   { n: "03", title: "Strategy & Planning", text: "A tailored plan with clear milestones and realistic outcomes." },
   { n: "04", title: "Execution", text: "We negotiate, market and manage every detail on your behalf." },
-  { n: "05", title: "Successful Outcome", text: "Signed, transferred and supported â€” even after the handover." },
+  { n: "05", title: "Successful Outcome", text: "Signed, transferred and supported Ã¢â‚¬â€ even after the handover." },
 ];
 
 function Index() {
@@ -77,13 +77,13 @@ function Index() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      {/* HERO â€” editorial, type-led, no people */}
+      {/* HERO Ã¢â‚¬â€ editorial, type-led, no people */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="grain absolute inset-0 opacity-60" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-12 sm:px-6 md:px-10 md:pb-24 md:pt-20">
           <div className="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
             <span className="inline-block h-px w-8 bg-gold" />
-            Est. South Africa Â· Master Practitioner in Real Estate
+            Est. South Africa Ã‚Â· Master Practitioner in Real Estate
           </div>
 
           <h1 className="mt-8 max-w-5xl font-display text-[clamp(2.5rem,8vw,6.5rem)] leading-[0.95] tracking-[-0.035em] text-balance text-ink">
@@ -97,7 +97,7 @@ function Index() {
 
           <div className="mt-10 grid gap-8 md:grid-cols-12 md:gap-12">
             <p className="md:col-span-6 md:col-start-1 max-w-xl text-[15px] leading-relaxed text-foreground/75 md:text-[17px]">
-              The SBU Real Estate is the practice of Mphumzeni Nyembe â€” guiding buyers, sellers,
+              The SBU Real Estate is the practice of Mphumzeni Nyembe Ã¢â‚¬â€ guiding buyers, sellers,
               landlords, tenants and investors through the South African property market with
               transparency, patience and professional rigour.
             </p>
@@ -107,7 +107,7 @@ function Index() {
               </a>
               <a href="tel:+27837764989" className="inline-flex items-center justify-between gap-3 rounded-none border border-border bg-card px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-foreground transition hover:border-foreground">
                 <span className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> 083 776 4989</span>
-                <span className="text-gold">â†’</span>
+                <span className="text-gold">Ã¢â€ â€™</span>
               </a>
             </div>
           </div>
@@ -132,14 +132,14 @@ function Index() {
       <section aria-hidden className="overflow-hidden border-b border-border bg-ink text-paper">
         <div className="mx-auto flex max-w-7xl items-center gap-8 px-4 py-6 sm:px-6 md:px-10">
           <span className="font-display text-xl italic md:text-2xl">Trust</span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50">Â·</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50">Ã‚Â·</span>
           <span className="font-display text-xl italic md:text-2xl">Transparency</span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50">Â·</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50">Ã‚Â·</span>
           <span className="font-display text-xl italic md:text-2xl">Service</span>
         </div>
       </section>
 
-      {/* ABOUT â€” no portrait, logo-led monogram instead */}
+      {/* ABOUT Ã¢â‚¬â€ no portrait, logo-led monogram instead */}
       <section id="about" className="border-b border-border bg-bone">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-12 md:gap-16 md:px-10 md:py-28">
           <div className="md:col-span-5">
@@ -149,9 +149,9 @@ function Index() {
             </h2>
             <div className="mt-10 hidden md:block">
               <figure className="relative aspect-square w-full max-w-sm bg-card p-10 ring-1 ring-border">
-                <img src="/sbu-logo.png" alt="The SBU Real Estate emblem" className="h-full w-full object-contain" />
+                <img src="/sbu-logo.jpg" alt="The SBU Real Estate emblem" className="h-full w-full object-contain" />
                 <figcaption className="absolute -bottom-4 left-6 right-6 bg-ink px-4 py-2 text-center font-mono text-[10px] uppercase tracking-[0.22em] text-paper">
-                  The SBU Real Estate Â· Est. ZA
+                  The SBU Real Estate Ã‚Â· Est. ZA
                 </figcaption>
               </figure>
             </div>
@@ -163,14 +163,14 @@ function Index() {
             </p>
             <p className="mt-6 text-[15px] leading-relaxed text-foreground/75 md:text-base">
               Mphumzeni brings deep local market knowledge and a client-first ethic to every mandate
-              â€” whether you are buying your first home in Soweto, renting out a unit in Gauteng,
+              Ã¢â‚¬â€ whether you are buying your first home in Soweto, renting out a unit in Gauteng,
               or assembling a small portfolio across the country.
             </p>
             <ul className="mt-10 grid gap-3 sm:grid-cols-2">
               {[
                 "Industry expertise and current market insight",
                 "Personal service from first call to final transfer",
-                "Transparent processes â€” no hidden surprises",
+                "Transparent processes Ã¢â‚¬â€ no hidden surprises",
                 "Strong understanding of the South African market",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 border-t border-border pt-4 text-sm text-foreground/85">
@@ -182,7 +182,7 @@ function Index() {
               <p className="font-display text-2xl italic leading-snug text-ink md:text-3xl">
                 "Elevating Professionalism, Transparency and Service."
               </p>
-              <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">â€” The SBU Real Estate</footer>
+              <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Ã¢â‚¬â€ The SBU Real Estate</footer>
             </blockquote>
           </div>
         </div>
@@ -199,7 +199,7 @@ function Index() {
               </h2>
             </div>
             <p className="md:col-span-6 md:col-start-7 md:pt-12 text-[15px] leading-relaxed text-foreground/75 md:text-base">
-              Each service is delivered with the same standard of care â€” whether you are buying
+              Each service is delivered with the same standard of care Ã¢â‚¬â€ whether you are buying
               your first home, leasing out a unit, or building a portfolio.
             </p>
           </div>
@@ -313,7 +313,7 @@ function Index() {
                     <span className="block font-display text-xl text-ink group-hover:text-primary">083 776 4989</span>
                   </span>
                 </span>
-                <span className="text-gold transition group-hover:translate-x-1">â†’</span>
+                <span className="text-gold transition group-hover:translate-x-1">Ã¢â€ â€™</span>
               </a>
               <a href="mailto:mphumzeni@thesbu.co.za" className="group flex items-center justify-between gap-3 border-t border-border py-5 transition hover:text-primary">
                 <span className="flex items-center gap-4 min-w-0">
@@ -323,7 +323,7 @@ function Index() {
                     <span className="block font-display text-xl text-ink group-hover:text-primary truncate">mphumzeni@thesbu.co.za</span>
                   </span>
                 </span>
-                <span className="text-gold transition group-hover:translate-x-1">â†’</span>
+                <span className="text-gold transition group-hover:translate-x-1">Ã¢â€ â€™</span>
               </a>
               <div className="flex items-start justify-between gap-3 border-y border-border py-5">
                 <span className="flex items-start gap-4">
