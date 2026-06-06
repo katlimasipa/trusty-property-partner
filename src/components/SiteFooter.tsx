@@ -10,7 +10,7 @@ export function SiteFooter() {
               <img src="/sbu-logo.jpg" alt="" width={48} height={48} className="h-12 w-12" />
               <div>
                 <div className="font-display text-lg text-paper">The SBU Real Estate</div>
-                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-paper/60">Mphumzeni Nyembe Ã‚Â· MPRE</div>
+                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-paper/60">Mphumzeni Nyembe · MPRE</div>
               </div>
             </div>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-paper/70">
@@ -39,7 +39,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-paper/15">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-4 py-5 text-[11px] text-paper/55 sm:px-6 md:flex-row md:items-center md:px-10">
-          <span>Ã‚Â© {new Date().getFullYear()} The SBU Real Estate. Registered with the PPRA.</span>
+          <span>© {new Date().getFullYear()} The SBU Real Estate. Registered with the PPRA.</span>
           <span>
             Crafted by{" "}
             <a href="https://architeq.co.za" target="_blank" rel="noopener noreferrer" className="text-paper/85 underline-offset-4 hover:text-gold hover:underline">

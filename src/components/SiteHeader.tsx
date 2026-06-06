@@ -18,7 +18,7 @@ export function SiteHeader() {
           <img src="/sbu-logo.jpg" alt="The SBU Real Estate" width={40} height={40} className="h-9 w-9 shrink-0 sm:h-10 sm:w-10" />
           <div className="leading-tight min-w-0">
             <div className="font-display text-[15px] sm:text-base tracking-tight text-foreground truncate">The SBU Real Estate</div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">MPRE Ã‚Â· Soweto, ZA</div>
+            <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">MPRE · Soweto, ZA</div>
           </div>
         </a>
         <nav className="hidden items-center gap-7 lg:flex">
@@ -46,7 +46,7 @@ export function SiteHeader() {
             {links.map((l) => (
               <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="flex items-center justify-between py-4 text-sm text-foreground">
                 <span className="flex items-center gap-3"><span className="font-mono text-[10px] text-gold">{l.num}</span>{l.label}</span>
-                <span className="text-gold">Ã¢â€ â€™</span>
+                <span className="text-gold"></span>
               </a>
             ))}
             <a href="tel:+27837764989" className="flex items-center gap-2 py-4 text-sm font-medium text-foreground">
