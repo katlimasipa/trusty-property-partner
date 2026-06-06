@@ -10,7 +10,7 @@ export function SiteFooter() {
               <img src="/sbu-logo.jpg" alt="" width={48} height={48} className="h-12 w-12" />
               <div>
                 <div className="font-display text-lg text-paper">The SBU Real Estate</div>
-                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-paper/60">Mphumzeni Nyembe · MPRE</div>
+                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-paper/60">Mphumzeni Nyembe - MPRE</div>
               </div>
             </div>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-paper/70">
