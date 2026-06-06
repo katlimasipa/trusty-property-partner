@@ -65,11 +65,11 @@ const whyUs = [
 ];
 
 const steps = [
-  { n: "01", title: "Consultation", text: "We listen first - your goals, timeline and circumstances." },
+  { n: "01", title: "Consultation", text: "We listen first -- your goals, timeline and circumstances." },
   { n: "02", title: "Property Assessment", text: "An honest evaluation of value, condition and market position." },
   { n: "03", title: "Strategy & Planning", text: "A tailored plan with clear milestones and realistic outcomes." },
   { n: "04", title: "Execution", text: "We negotiate, market and manage every detail on your behalf." },
-  { n: "05", title: "Successful Outcome", text: "Signed, transferred and supported - even after the handover." },
+  { n: "05", title: "Successful Outcome", text: "Signed, transferred and supported -- even after the handover." },
 ];
 
 function Index() {
@@ -77,7 +77,7 @@ function Index() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      {/* HERO - editorial, type-led, no people */}
+      {/* HERO -- editorial, type-led, no people */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="grain absolute inset-0 opacity-60" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-12 sm:px-6 md:px-10 md:pb-24 md:pt-20">
@@ -97,7 +97,7 @@ function Index() {
 
           <div className="mt-10 grid gap-8 md:grid-cols-12 md:gap-12">
             <p className="md:col-span-6 md:col-start-1 max-w-xl text-[15px] leading-relaxed text-foreground/75 md:text-[17px]">
-              The SBU Real Estate is the practice of Mphumzeni Nyembe - guiding buyers, sellers,
+              The SBU Real Estate is the practice of Mphumzeni Nyembe -- guiding buyers, sellers,
               landlords, tenants and investors through the South African property market with
               transparency, patience and professional rigour.
             </p>
@@ -139,7 +139,7 @@ function Index() {
         </div>
       </section>
 
-      {/* ABOUT - no portrait, logo-led monogram instead */}
+      {/* ABOUT -- no portrait, logo-led monogram instead */}
       <section id="about" className="border-b border-border bg-bone">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-12 md:gap-16 md:px-10 md:py-28">
           <div className="md:col-span-5">
@@ -163,14 +163,14 @@ function Index() {
             </p>
             <p className="mt-6 text-[15px] leading-relaxed text-foreground/75 md:text-base">
               Mphumzeni brings deep local market knowledge and a client-first ethic to every mandate
-              - whether you are buying your first home in Soweto, renting out a unit in Gauteng,
+              -- whether you are buying your first home in Soweto, renting out a unit in Gauteng,
               or assembling a small portfolio across the country.
             </p>
             <ul className="mt-10 grid gap-3 sm:grid-cols-2">
               {[
                 "Industry expertise and current market insight",
                 "Personal service from first call to final transfer",
-                "Transparent processes - no hidden surprises",
+                "Transparent processes -- no hidden surprises",
                 "Strong understanding of the South African market",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 border-t border-border pt-4 text-sm text-foreground/85">
@@ -182,7 +182,7 @@ function Index() {
               <p className="font-display text-2xl italic leading-snug text-ink md:text-3xl">
                 "Elevating Professionalism, Transparency and Service."
               </p>
-              <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">- The SBU Real Estate</footer>
+              <footer className="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">-- The SBU Real Estate</footer>
             </blockquote>
           </div>
         </div>
@@ -199,7 +199,7 @@ function Index() {
               </h2>
             </div>
             <p className="md:col-span-6 md:col-start-7 md:pt-12 text-[15px] leading-relaxed text-foreground/75 md:text-base">
-              Each service is delivered with the same standard of care - whether you are buying
+              Each service is delivered with the same standard of care -- whether you are buying
               your first home, leasing out a unit, or building a portfolio.
             </p>
           </div>
