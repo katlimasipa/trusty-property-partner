@@ -18,7 +18,7 @@ export function SiteHeader() {
           <img src="/sbu-logo.jpg" alt="The SBU Real Estate" width={40} height={40} className="h-9 w-9 shrink-0 sm:h-10 sm:w-10" />
           <div className="leading-tight min-w-0">
             <div className="font-display text-[15px] sm:text-base tracking-tight text-foreground truncate">The SBU Real Estate</div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">MPRE · Soweto, ZA</div>
+            <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">MPRE - Soweto, ZA</div>
           </div>
         </a>
         <nav className="hidden items-center gap-7 lg:flex">

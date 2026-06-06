@@ -26,7 +26,7 @@ export function ContactForm() {
         <textarea required name="message" rows={5} maxLength={1500} className="resize-none border-0 border-b border-border bg-transparent px-0 py-3 text-[15px] outline-none transition focus:border-primary" />
       </label>
       <button type="submit" className="mt-3 inline-flex items-center justify-center gap-2 rounded-none bg-foreground px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-background transition hover:bg-primary">
-        {sent ? "Opening your email…" : "Send enquiry →"}
+        {sent ? "Opening your email..." : "Send enquiry "}
       </button>
       <p className="text-[11px] leading-relaxed text-muted-foreground">By submitting, you agree to be contacted regarding your property enquiry.</p>
     </form>

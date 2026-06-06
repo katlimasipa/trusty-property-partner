@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "The SBU Real Estate · Mphumzeni Nyembe (MPRE)" },
+      { title: "The SBU Real Estate - Mphumzeni Nyembe (MPRE)" },
       { name: "description", content: "Trusted real estate practice serving South Africa with professionalism, transparency and service." },
       { name: "author", content: "The SBU Real Estate" },
       { property: "og:site_name", content: "The SBU Real Estate" },
